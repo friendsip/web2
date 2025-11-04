@@ -66,7 +66,7 @@ export default function Home() {
       question: "Why do leading pharmaceutical companies use ArcMutate?",
       answer: "Because they care about patient wellness.",
       detail:
-        "Medical device software demands the highest standards. Mutation testing validates development processes and detects 83.5% of faults versus 57.5% with traditional methods.",
+        "Medical device software demands the highest standards. Mutation testing validates development processes and detects faults that traditional testing methods miss.",
       video: "/health.mov",
       poster: "/health.jpg",
       icon: HeartPulse,
@@ -225,7 +225,7 @@ export default function Home() {
               {
                 icon: CheckCircle2,
                 title: "Regulatory Compliance",
-                desc: "Meet ISO 26262, FDA, and other critical safety standards with confidence",
+                desc: "Improve the quality of your tests to help you meet critical safety standards",
               },
               {
                 icon: TrendingUp,
@@ -256,16 +256,7 @@ export default function Home() {
           </div>
 
           <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 border">
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold text-primary mb-2">
-                  83.5%
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  Fault detection rate with mutation testing vs 57.5%
-                  traditional
-                </p>
-              </div>
+            <div className="grid md:grid-cols-2 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold text-secondary mb-2">
                   Weeks
@@ -283,106 +274,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Industry Solutions */}
-      <section id="industries" className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Industry Solutions</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Tailored mutation testing solutions for industries where software
-              quality is non-negotiable
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Building2,
-                title: "Automotive",
-                subtitle: "ISO 26262 Compliance",
-                challenges: [
-                  "ASIL D safety integrity",
-                  "Functional safety requirements",
-                  "Preventing field failures and recalls",
-                ],
-                solution:
-                  "ArcMutate helps automotive teams achieve ISO 26262 compliance by exposing vulnerabilities that traditional coverage metrics miss. Our mutation testing ensures every safety-critical fault is caught before production.",
-                caseStudy:
-                  "Embedded power-steering unit teams refined tests until all mutants were killed, achieving ASIL D certification.",
-                color: "border-blue-500",
-              },
-              {
-                icon: Landmark,
-                title: "Financial Services",
-                subtitle: "Security & Compliance",
-                challenges: [
-                  "High-severity vulnerabilities",
-                  "Transaction security",
-                  "Data integrity protection",
-                ],
-                solution:
-                  "Banks and financial institutions use ArcMutate to uncover security blind spots that 100% code coverage misses. Systematic fault injection reveals vulnerabilities in security-critical domains.",
-                caseStudy:
-                  "Trail of Bits research shows mutation testing is essential for blockchain and financial security applications.",
-                color: "border-green-500",
-              },
-              {
-                icon: HeartPulse,
-                title: "Pharmaceutical & Medical",
-                subtitle: "Patient Safety",
-                challenges: [
-                  "FDA/CE regulatory compliance",
-                  "Patient safety assurance",
-                  "Medical device reliability",
-                ],
-                solution:
-                  "Medical device manufacturers rely on ArcMutate to validate development processes and ensure patient safety. Our testing detects 83.5% of faults versus 57.5% with traditional methods.",
-                caseStudy:
-                  "Medical software study demonstrates mutation testing significantly improves fault detection in TDD environments.",
-                color: "border-purple-500",
-              },
-            ].map((industry, idx) => (
-              <Card
-                key={idx}
-                className={`border-2 ${industry.color} hover:shadow-xl transition-all`}
-              >
-                <CardHeader>
-                  <industry.icon className="w-12 h-12 text-primary mb-4" />
-                  <CardTitle className="text-2xl">{industry.title}</CardTitle>
-                  <CardDescription className="text-base font-semibold">
-                    {industry.subtitle}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold mb-2">Key Challenges:</h4>
-                    <ul className="space-y-1 text-sm text-muted-foreground">
-                      {industry.challenges.map((challenge, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <CheckCircle2 className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
-                          <span>{challenge}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-2">How ArcMutate Helps:</h4>
-                    <p className="text-sm text-muted-foreground">
-                      {industry.solution}
-                    </p>
-                  </div>
-                  <div className="pt-4 border-t">
-                    <p className="text-xs italic text-muted-foreground">
-                      {industry.caseStudy}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
@@ -680,7 +571,7 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <p className="text-muted-foreground mb-4">
-              Need enterprise licensing or have a large team?
+              Need enterprise licensing or need to pay by invoice?
             </p>
             <Button size="lg" variant="outline">
               Contact Sales

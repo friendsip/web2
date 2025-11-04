@@ -28,8 +28,8 @@ export default function Bank() {
             </h1>
 
             <div className="space-y-6">
-              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg border-2 border-green-500/20 shadow-lg">
-                <h2 className="text-3xl font-bold text-green-600 mb-4">
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg border">
+                <h2 className="text-3xl font-bold mb-4">
                   Because they value their customers' security.
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
@@ -38,7 +38,7 @@ export default function Bank() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 mt-12">
-                <div className="bg-white p-6 rounded-lg border-2 border-green-500/20">
+                <div className="bg-white p-6 rounded-lg border">
                   <h3 className="text-xl font-bold mb-3">Key Challenges:</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• High-severity vulnerabilities</li>
@@ -47,7 +47,7 @@ export default function Bank() {
                   </ul>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg border-2 border-green-500/20">
+                <div className="bg-white p-6 rounded-lg border">
                   <h3 className="text-xl font-bold mb-3">How ArcMutate Helps:</h3>
                   <p className="text-sm text-muted-foreground">
                     Banks and financial institutions use ArcMutate to uncover security blind spots that 100% code coverage misses. Systematic fault injection reveals vulnerabilities in security-critical domains.
@@ -55,19 +55,6 @@ export default function Bank() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-green-100/50 p-8 rounded-lg border-2 border-green-300 mt-12">
-                <h3 className="text-xl font-bold text-green-900 mb-4">The Analogy</h3>
-                <p className="text-base text-green-800 leading-relaxed">
-                  Mutation testing is your code's financial stress test. Just as regulators require banks to simulate extreme market conditions and economic crises to prove their systems won't fail customers, mutation testing simulates code failures to prove your tests are resilient enough to catch real bugs in critical financial systems.
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-green-50 to-green-100/50 p-6 rounded-lg border-2 border-green-200 mt-12">
-                <h3 className="text-lg font-bold text-green-900 mb-2">Case Study</h3>
-                <p className="text-sm text-green-800">
-                  Trail of Bits research shows mutation testing is essential for blockchain and financial security applications.
-                </p>
-              </div>
             </div>
 
             <div className="flex gap-4 mt-12">

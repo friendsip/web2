@@ -28,17 +28,17 @@ export default function Car() {
             </h1>
 
             <div className="space-y-6">
-              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg border-2 border-blue-500/20 shadow-lg">
-                <h2 className="text-3xl font-bold text-blue-600 mb-4">
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg border">
+                <h2 className="text-3xl font-bold mb-4">
                   Because they care about their drivers' safety.
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Meeting ISO 26262 compliance and achieving ASIL D safety integrity levels requires rigorous testing that catches every potential fault before it reaches the road.
+                  Rigorous testing that improves Functional Safety for car software helps catch every potential fault before it reaches the road.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 mt-12">
-                <div className="bg-white p-6 rounded-lg border-2 border-blue-500/20">
+                <div className="bg-white p-6 rounded-lg border">
                   <h3 className="text-xl font-bold mb-3">Key Challenges:</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• ASIL D safety integrity</li>
@@ -47,18 +47,18 @@ export default function Car() {
                   </ul>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg border-2 border-blue-500/20">
+                <div className="bg-white p-6 rounded-lg border">
                   <h3 className="text-xl font-bold mb-3">How ArcMutate Helps:</h3>
                   <p className="text-sm text-muted-foreground">
-                    ArcMutate helps automotive teams achieve ISO 26262 compliance by exposing vulnerabilities that traditional coverage metrics miss. Our mutation testing ensures every safety-critical fault is caught before production.
+                    ArcMutate helps automotive teams improve Functional Safety for car software by exposing vulnerabilities that traditional coverage metrics miss. Our mutation testing ensures every safety-critical fault is caught before production.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100/50 p-6 rounded-lg border-2 border-blue-200 mt-12">
-                <h3 className="text-lg font-bold text-blue-900 mb-2">Case Study</h3>
-                <p className="text-sm text-blue-800">
-                  Embedded power-steering unit teams refined tests until all mutants were killed, achieving ASIL D certification.
+              <div className="bg-white p-6 rounded-lg border mt-12">
+                <h3 className="text-lg font-bold mb-2">Case Study</h3>
+                <p className="text-sm text-muted-foreground">
+                  One of the world's formost car manufacturers recently had to delay the release of a prestige car for 8 months because the software had issues. They moved their software production to be fully mutation tested using ArcMutate to improve test and code quality.
                 </p>
               </div>
             </div>

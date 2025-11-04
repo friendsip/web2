@@ -28,17 +28,17 @@ export default function Health() {
             </h1>
 
             <div className="space-y-6">
-              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg border-2 border-purple-500/20 shadow-lg">
-                <h2 className="text-3xl font-bold text-purple-600 mb-4">
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-lg shadow-lg">
+                <h2 className="text-3xl font-bold mb-4">
                   Because they care about patient wellness.
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Medical device software demands the highest standards. Mutation testing validates development processes and detects 83.5% of faults versus 57.5% with traditional methods.
+                  Medical device software demands the highest standards. Mutation testing validates development processes and detects faults that traditional testing methods miss.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 mt-12">
-                <div className="bg-white p-6 rounded-lg border-2 border-purple-500/20">
+                <div className="bg-white p-6 rounded-lg border">
                   <h3 className="text-xl font-bold mb-3">Key Challenges:</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• FDA/CE regulatory compliance</li>
@@ -47,24 +47,24 @@ export default function Health() {
                   </ul>
                 </div>
 
-                <div className="bg-white p-6 rounded-lg border-2 border-purple-500/20">
+                <div className="bg-white p-6 rounded-lg border">
                   <h3 className="text-xl font-bold mb-3">How ArcMutate Helps:</h3>
                   <p className="text-sm text-muted-foreground">
-                    Medical device manufacturers rely on ArcMutate to validate development processes and ensure patient safety. Our testing detects 83.5% of faults versus 57.5% with traditional methods.
+                    Medical device manufacturers rely on ArcMutate to validate development processes and ensure patient safety. Our testing detects faults that traditional testing methods miss.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100/50 p-8 rounded-lg border-2 border-purple-300 mt-12">
-                <h3 className="text-xl font-bold text-purple-900 mb-4">The Analogy</h3>
-                <p className="text-base text-purple-800 leading-relaxed">
-                  Think of it as quality control in pharmaceutical manufacturing. At each production stage, companies deliberately stress-test materials and processes to find defects before they reach patients. Similarly, mutation testing deliberately breaks your code to ensure your tests are robust enough to catch real production failures.
+              <div className="bg-white p-8 rounded-lg border mt-12">
+                <h3 className="text-xl font-bold mb-4">About Mutation Testing</h3>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Mutation testing adds errors (mutations) to code to ensure your tests are robust enough to catch real production failures. The process is similar to how medical companies stress-test materials and processes to find defects before they reach patients. ArcMutate smooths that process making life easier for developers and making them more efficient.
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100/50 p-6 rounded-lg border-2 border-purple-200 mt-12">
-                <h3 className="text-lg font-bold text-purple-900 mb-2">Case Study</h3>
-                <p className="text-sm text-purple-800">
+              <div className="bg-white p-6 rounded-lg border mt-12">
+                <h3 className="text-lg font-bold mb-2">Case Study</h3>
+                <p className="text-sm text-muted-foreground">
                   Medical software study demonstrates mutation testing significantly improves fault detection in TDD environments.
                 </p>
               </div>
