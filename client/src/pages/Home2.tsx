@@ -99,9 +99,18 @@ export default function Home2() {
       <nav className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="container flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-white" />
-            </div>
+            <svg width="32" height="26" viewBox="0 0 28 22" xmlns="http://www.w3.org/2000/svg">
+              <g stroke-width="2" stroke-linecap="round" transform="translate(-13,-19)">
+                <line x1="20" y1="20" x2="30" y2="30" stroke="#3b82f6" />
+                <line x1="30" y1="20" x2="40" y2="30" stroke="#3b82f6" />
+                <line x1="20" y1="30" x2="30" y2="40" stroke="#3b82f6" />
+                <line x1="40" y1="30" x2="30" y2="40" stroke="#3b82f6" />
+              </g>
+              <g transform="translate(-13,-19)">
+                <path d="m 15,25 h 5 l 5,5 5,5 5,-5 -5,-5 -5,-5" stroke-width="2" stroke="#3b82f6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <circle cx="15" cy="25" r="2" fill="#3b82f6" />
+              </g>
+            </svg>
             <span className="text-xl font-bold">ArcMutate</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
@@ -434,7 +443,16 @@ export default function Home2() {
                 benefit: "5-minute integration",
               },
             ].map((feature, idx) => (
-              <Card key={idx} className="hover:shadow-lg transition-shadow">
+              <Card
+                key={idx}
+                className={`hover:shadow-lg transition-shadow ${[0, 1, 2, 3, 4, 5].includes(idx) ? '!bg-transparent' : ''}`}
+                style={[0, 1, 2, 3, 4, 5].includes(idx) ? {
+                  backgroundImage: `linear-gradient(rgba(255,255,255,0.70), rgba(255,255,255,0.70)), url(${idx === 0 ? '/git-integration.png' : idx === 1 ? '/tiny-logo-arcmutate.svg' : idx === 2 ? '/logo-kotlin.svg' : idx === 3 ? '/tiny-logo-arcmutate.svg' : idx === 4 ? '/operators.png' : '/maven-logo.svg'})`,
+                  backgroundSize: '300px 300px',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat'
+                } : {}}
+              >
                 <CardHeader>
                   <feature.icon className="w-10 h-10 text-primary mb-2" />
                   <CardTitle>{feature.title}</CardTitle>
@@ -443,7 +461,7 @@ export default function Home2() {
                   </Badge>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     {feature.desc}
                   </p>
                 </CardContent>
@@ -728,9 +746,18 @@ export default function Home2() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-                  <Code2 className="w-5 h-5 text-white" />
-                </div>
+                <svg width="32" height="26" viewBox="0 0 28 22" xmlns="http://www.w3.org/2000/svg">
+                  <g stroke-width="2" stroke-linecap="round" transform="translate(-13,-19)">
+                    <line x1="20" y1="20" x2="30" y2="30" stroke="#3b82f6" />
+                    <line x1="30" y1="20" x2="40" y2="30" stroke="#3b82f6" />
+                    <line x1="20" y1="30" x2="30" y2="40" stroke="#3b82f6" />
+                    <line x1="40" y1="30" x2="30" y2="40" stroke="#3b82f6" />
+                  </g>
+                  <g transform="translate(-13,-19)">
+                    <path d="m 15,25 h 5 l 5,5 5,5 5,-5 -5,-5 -5,-5" stroke-width="2" stroke="#3b82f6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                    <circle cx="15" cy="25" r="2" fill="#3b82f6" />
+                  </g>
+                </svg>
                 <span className="text-lg font-bold">ArcMutate</span>
               </div>
               <p className="text-sm text-muted-foreground">

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="28"
+   height="22"
+   viewBox="0 0 28 22"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     id="namedview22"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="14.116667"
+     inkscape:cx="-4.4628099"
+     inkscape:cy="11.015348"
+     inkscape:window-width="1792"
+     inkscape:window-height="1067"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <title
+     id="title9">Arc mutate</title>
+  <g
+     id="goto10"
+     stroke-width="2"
+     stroke-linecap="round"
+     transform="translate(-13,-19)">
+    <line
+       id="line-1x1"
+       x1="20"
+       y1="20"
+       x2="30"
+       y2="30"
+       stroke="#65cc6e" />
+    <line
+       id="line-2x1"
+       x1="30"
+       y1="20"
+       x2="40"
+       y2="30"
+       stroke="#65cc87" />
+    <line
+       id="line-1x2"
+       x1="20"
+       y1="30"
+       x2="30"
+       y2="40"
+       stroke="#65cca1" />
+    <line
+       id="line-2x2"
+       x1="40"
+       y1="30"
+       x2="30"
+       y2="40"
+       stroke="#65cca1" />
+  </g>
+  <g
+     id="best_walker"
+     transform="translate(-13,-19)">
+    <path
+       d="m 15,25 h 5 l 5,5 5,5 5,-5 -5,-5 -5,-5"
+       stroke-width="2"
+       stroke="#19c6e5"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       fill="none"
+       id="path16" />
+    <circle
+       id="start_point"
+       cx="15"
+       cy="25"
+       r="2"
+       fill="#19c6e5" />
+  </g>
+</svg>
