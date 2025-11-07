@@ -43,7 +43,7 @@ export default function Home2() {
       answer: "Because they care about their drivers' safety.",
       detail:
         "Meeting ISO 26262 compliance and achieving ASIL D safety integrity levels requires rigorous testing that catches every potential fault before it reaches the road.",
-      video: "/car-2.mov",
+      video: "/cars.mp4",
       poster: "/car.jpg",
       icon: Building2,
       color: "text-blue-600",
@@ -55,7 +55,7 @@ export default function Home2() {
       answer: "Because they value their customers' security.",
       detail:
         "Traditional code coverage misses high-severity vulnerabilities. Mutation testing systematically uncovers blind spots in test suites, protecting transactions and data integrity.",
-      video: "/bank.mov",
+      video: "/banks.mp4",
       poster: "/bank.jpg",
       icon: Landmark,
       color: "text-green-600",
@@ -67,7 +67,7 @@ export default function Home2() {
       answer: "Because they care about patient wellness.",
       detail:
         "Medical device software demands the highest standards. Mutation testing validates development processes and detects 83.5% of faults versus 57.5% with traditional methods.",
-      video: "/health.mov",
+      video: "/healths.mp4",
       poster: "/health.jpg",
       icon: HeartPulse,
       color: "text-purple-600",
