@@ -5,10 +5,21 @@ import mime from 'mime-types';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
-    const pathname = req.url || '/';
-
+    // Get the pathname from the request
+    // On Vercel, req.url contains the full path including query string
+    let pathname = req.url || '/';
+    
+    // Remove query string if present
+    const queryIndex = pathname.indexOf('?');
+    if (queryIndex !== -1) {
+      pathname = pathname.substring(0, queryIndex);
+    }
+    
+    // Normalize the pathname - remove leading slash for path.join
+    let relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\//, '');
+    
     // Build the file path relative to dist/public
-    const filePath = path.join(process.cwd(), 'dist', 'public', pathname);
+    const filePath = path.join(process.cwd(), 'dist', 'public', relativePath);
     const normalizedPath = path.normalize(filePath);
 
     // Security check: ensure the path is within dist/public
